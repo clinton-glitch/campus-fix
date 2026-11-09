@@ -8,6 +8,7 @@ databases:
 services:
   - type: web
     name: campusfix
+    rootDir: campusfix
     runtime: node
     plan: free
     buildCommand: npm run install:all && npm run build
