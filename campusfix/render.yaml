@@ -11,8 +11,7 @@ services:
     rootDir: campusfix
     runtime: node
     plan: free
-    buildCommand: npm run install:all && npm run build
-    startCommand: npm start
+    buildCommand: NPM_CONFIG_INCLUDE=dev npm run install:all && npm run build
     healthCheckPath: /api/health
     envVars:
       - key: NODE_ENV
