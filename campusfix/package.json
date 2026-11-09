@@ -1,0 +1,10 @@
+{
+  "name": "campusfix",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start",
+    "test": "npm --prefix server test && npm --prefix client test"
+  }
+}
